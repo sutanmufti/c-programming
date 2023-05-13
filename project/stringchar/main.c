@@ -7,6 +7,14 @@ int strlenz(char *s)
         
         return n;
  } ;
+
+void printstring( char * s){
+    while (*s != '\0'){
+        printf("%c", *s);
+        s++;
+    }
+
+}
 int main(){
 
     char a = 'a'; // use single quote to denote a char
@@ -19,7 +27,7 @@ int main(){
         printf("%c",first[i]);
     }
 
-    char* second = "another way to store a string is as a pointer!! a pointer char is basically a string.\n";
+    char* second = "char * 'second' = \"another way to store a string is as a pointer!! a pointer char is basically a string.\n\"";
 
     // the second way to print a string.
     int i = 0;
@@ -27,6 +35,19 @@ int main(){
         printf("%c", second[i]);
         i++;
     }
+
+
+    printf("the 'second' is a pointer... which is the memory address (second's value is %p)\n", second);
+
+    printf("this is weird, but we can add integer to 'second' which result in second[1]. When we can add integer to the pointer of a string! For example: \n\n");
+    char p = *second;
+    printf("the value of 'p' is %c \n", p);
+    char q = *(second + 1);
+    printf("the value of 'q' is %c \n", q);
+    char r = *(second + 2);
+    printf("the value of 'r' is %c \n", r);
+
+    printstring("the printstring() is how we print a string of char! It demonstrates that char * can be added with int values. C is weird.\n");
 
     int longval = strlenz(second);
     printf("charlong %d,", longval);
