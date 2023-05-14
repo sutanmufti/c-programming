@@ -4,4 +4,5 @@ My journey in understanding C programming language. The project consists of fold
 
 The purpose is understanding standard libraries. Simple tasks of reading and writing files. Nothing fancy, just getting the basics.
 
-compile it in root, nothing fancy, just use ```cc``` like this: ```cc project/printf/prijtf.c``` and execute the result using ```./a.out``` because the default out executable is ```a.out```.
+compile it in root, nothing fancy, just use ```cc``` like this: ```cc 
+project/printf/printf.c``` and execute the result using ```./a.out``` because the default out executable is ```a.out```.
